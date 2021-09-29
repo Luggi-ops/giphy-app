@@ -13,6 +13,7 @@ const GifExpertApp = () =>{
             <hr />
 
             <AddCategorie setCategories={setCategories}/>
+           
             
             <ol className="categorias">
                 {

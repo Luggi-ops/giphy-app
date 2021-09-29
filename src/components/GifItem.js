@@ -4,7 +4,7 @@ const GifItem = ({id, img, title})=>{
 
     return(
         <>
-            <div className="gifs" key={id}>
+            <div className="gifs animate__animated animate__fadeInLeft" key={id}>
                 <img src={img.url} alt={title}/>
                 <h4>{title}</h4>
             </div>

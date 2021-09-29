@@ -12,8 +12,8 @@ html{
 body{
   font-family: sans-serif;
   font-size: 1.8rem;
-  background-color: #2A333F;
-  color: #FEFEFC;
+  background-color: #FAFAF3;
+  color: #2A333F;
   padding: 5rem;
 }
 
@@ -44,14 +44,15 @@ hr{
   outline: none;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background: linear-gradient(145deg, #262e39, #2d3743);
-  box-shadow:  12px 12px 23px #242b36,
-              -12px -12px 23px #303b48;
-  color: #fff;
+  background: #FAFAF3;
+  box-shadow:  20px 20px 60px #d5d5cf,
+               -20px -20px 60px #ffffff;
+  color: #000;
 }
 
 .formCategorie button{
   background: #5FB761;
+  color: #fff;
 }
 
 
@@ -71,17 +72,30 @@ hr{
 .categorias li{
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background: #2A333F;
-  box-shadow: inset 13px 13px 26px #242b36,
-            inset -13px -13px 26px #303b48;
+  background: #FAFAF3;
+  box-shadow: inset 20px 20px 60px #d5d5cf,
+              inset -20px -20px 60px #ffffff;
   font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 
 .grid_gifs{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 5rem;
+}
+
+@media screen and (min-width: 480px){
+  .grid_gifs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 720px){
+  .grid_gifs{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .gifs img{

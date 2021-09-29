@@ -13,12 +13,13 @@ const AddCategorie = ({setCategories})=>{
     const addCategorie = (e)=>{
         e.preventDefault();
         if(newCategorie.trim().length > 2){
-            setCategories(cat => [...cat, newCategorie]);
+            setCategories(cat => [newCategorie, ...cat]);
         }else{
             setCategories(cat => cat);
         }
         setNewCategorie('');
     }
+    
 
     return(
 
